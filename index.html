@@ -8,7 +8,7 @@
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #fbd3e9; color: #333; }
         header, footer { text-align: center; padding: 10px; background: #0056b3; color: white; }
-        .hero { text-align: center; padding: 40px 20px; background: #bb377d; }
+        .hero { text-align: center; padding: 40px 20px; background: #bb377d; display: flex; flex-direction: column; align-items: center; justify-content: center; }
         .hero h1 { font-size: 2em; color: white; }
         .hero p { margin: 20px 0; font-size: 1.1em; color: white; }
         .responsive-image { width: 100%; max-width: 600px; height: auto; }
@@ -20,8 +20,7 @@
             padding: 5px; 
             transform: rotate(45deg); 
             animation: moveDown 1s infinite; 
-            margin: 10px auto; 
-            font-weight: bold; /* Bold effect */
+            margin: 10px 0; /* Adjusted margin */
         }
         @keyframes moveDown { 0%, 100% { transform: translateY(0) rotate(45deg); } 50% { transform: translateY(10px) rotate(45deg); } }
         .scrolling-marquee { background: linear-gradient(to right, #ff0084, #33001b); color: white; padding: 10px 0; font-size: 1.1em; overflow: hidden; white-space: nowrap; }
