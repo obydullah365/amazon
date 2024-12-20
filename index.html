@@ -28,6 +28,28 @@
         .marquee { display: inline-block; animation: marquee 10s linear infinite; }
         @keyframes marquee { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
         footer { background: linear-gradient(to right, #fc6767, #ec008c); color: white; padding: 10px; }
+
+        /* Media Queries for Mobile Devices */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.5em; }
+            .hero p { font-size: 1em; }
+            .apply-button-image { max-width: 250px; }
+            .arrow { 
+                font-size: 1.2em; 
+                margin: 15px auto; 
+            }
+        }
+
+        /* Media Queries for Smaller Mobile Devices */
+        @media (max-width: 480px) {
+            .hero { padding: 30px 10px; }
+            .responsive-image { max-width: 100%; }
+            .apply-button-image { max-width: 200px; }
+            .arrow { 
+                font-size: 1.5em; 
+                margin: 20px auto;
+            }
+        }
     </style>
 </head>
 <body>
