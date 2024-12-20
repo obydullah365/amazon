@@ -15,13 +15,13 @@
         .apply-button-image { width: 100%; max-width: 300px; margin: 20px auto; display: block; }
         .arrow { display: inline-block; border: solid 2px red; border-width: 0 2px 2px 0; padding: 5px; transform: rotate(45deg); animation: moveDown 1s infinite; margin: 10px auto; }
         @keyframes moveDown { 0%, 100% { transform: translateY(0) rotate(45deg); } 50% { transform: translateY(10px) rotate(45deg); } }
-        .scrolling-marquee {
-            background: linear-gradient(90deg, #FF9A00, #28B363, #191E31);
-            color: white;
-            padding: 10px 0;
-            font-size: 1.1em;
-            overflow: hidden;
-            white-space: nowrap;
+        .scrolling-marquee { 
+            background: linear-gradient(to right, #5D5B68, #FF9A00, #28B363, #191E31); 
+            color: white; 
+            padding: 10px 0; 
+            font-size: 1.1em; 
+            overflow: hidden; 
+            white-space: nowrap; 
         }
         .marquee { display: inline-block; animation: marquee 10s linear infinite; }
         @keyframes marquee { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
